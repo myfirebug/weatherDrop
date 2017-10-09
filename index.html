@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    	html{
+    		background:url(img/02.jpg);
+    	}
+        #canvas{
+            width:100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script src="js/main.js"></script>
+    <script>
+        init({
+        	id:'canvas',
+        	maxNum:100,
+            //type: "rain",  // drop类型，有rain or snow
+            speed : [10,20], //速度范围
+            size_range: [2,5],//大小半径范围
+            hasBounce: true, //是否有反弹效果or false,
+            wind_direction: 105, //角度
+            hasGravity: true //是否有重力考虑
+        });
+    </script>
+</body>
+</html>
